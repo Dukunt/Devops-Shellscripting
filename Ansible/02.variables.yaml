@@ -2,11 +2,10 @@
   hosts: local
   connection: local
   vars:
-  -empdata:
-    empname:sateesh
-    id:1320733
+    EMPNAME: "sateesh"
+    ID: 1320733
   tasks:
   - name: print the varaiables
     ansible.builtin.debug:
-      msg: "employee name is  {{ 'empname' }}" 
-      msg: "Employee id is {{ 'id' }}"
+      msg: "employee name is  {{ EMPNAME }}" 
+      msg: "Employee id is {{ ID }}"
