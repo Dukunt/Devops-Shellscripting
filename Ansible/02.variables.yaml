@@ -2,8 +2,9 @@
   hosts: local
   connection: local
   vars:
-   empname:sateesh
-   id:1320733
+  -empdata:
+    empname:sateesh
+    id:1320733
   tasks:
   - name: print the varaiables
     ansible.builtin.debug:
